@@ -12,9 +12,17 @@
           <img src="img/index-logo.svg" width="125" height="25" alt= "Логотип магазина «Gllacy»">
         </a>
         <ul class="site-navigation">
-          <li><a href="Catalog.html">Каталог</a></li>
-          <li><a href="Delivery.html">Доставка и оплата</a></li>
-          <li><a href="contacts.html">О компании</a></li>
+          <li class="site-navigation-button"><a href="Catalog.html">Каталог</a>
+            <ul class="site-catalog-list">
+              <li class="site-catalog-new-item"><a href="#">Новинки</a></li>
+              <li class="site-catalog-item"><a href="#">Сливочное</a></li>
+              <li class="site-catalog-item"><a href="#">Щербеты</a></li>
+              <li class="site-catalog-item"><a href="#">Фруктовый лед</a></li>
+              <li class="site-catalog-item"><a href="#">Мелорин</a></li>
+            </ul>
+          </li>
+          <li class="site-navigation-button"><a href="Delivery.html">Доставка и оплата</a></li>
+          <li class="site-navigation-button"><a href="contacts.html">О компании</a></li>
         </ul>
         <ul class="user-navigation">
           <li class="site-search">Поиск</li>
@@ -129,21 +137,23 @@
         </p>
       </section>
       <article class="blog-news">
+        <h2 class="visually-hidden">Статья из блога.</h2>
         <!-- По восприятию: изображение задается фоном в СSS для этого класса -->
         <p class="blog-news-description">Новое в нашем блоге</p>
         <a class="blog-news-content" href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </article>
-      <span class="subscribe-form">
+      <div class="subscribe-form">
         <p>
           <!-- По восприятию: изображение задается фоном в CSS для этого класса -->
           Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
         </p>
         <!-- Здесь будет форма подписки после дачи материала-->
-      </span>
+      </div>
       <span class="location-map">
         <!-- Здесь будет располагаться карта -->
       </span>
       <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts-address">
           Адрес главного офиса<br>
           и офлайн-магазина:<br>
@@ -156,8 +166,27 @@
           Для заказов по телефону:<br>
           <strong class="phone-number">8 812 450-25-25</strong><br>
         </p>
-        <a class="feedback-button" href="feedback-form.html">Форма обратной связи</a>
+        <span class="feedback-button">Форма обратной связи</span>
       </section>
     </main>
+
+    <footer class="main-footer">
+      <ul>
+        <li class="social-button"><a href="#">Твиттер</a></li>
+        <li class="social-button"><a href="#">Инстаграм</a></li>
+        <li class="social-button"><a href="#">Фейсбук</a></li>
+        <li class="social-button"><a href="#">Вконтакте</a></li>
+      </ul>
+      <p class="additional-info">
+        <b class="info-for-suppliers"><a href="#">Для поставщиков</a></b>
+        <a href="#">О производстве</a>
+        <a href="#">Наши документы</a>
+        <a href="#">Экологические стандарты</a>
+      </p>
+      <p class="footer-copyright">
+        <a href="https://htmlacademy.ru/">HTML Academy</a>
+        <b>Сделано в HTML Academy © 2017</b>
+      </p>
+    </footer>
   </body>
 </html>
