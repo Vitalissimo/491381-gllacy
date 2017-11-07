@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -6,6 +6,7 @@
   </head>
   <body>
      <header class="main-header">
+      <div class="container">
       <h1 class="visually-hidden">Магазин мороженого «Глэйси»</h1>
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
@@ -34,7 +35,9 @@
         <span class="time-schedule">С 10 до 20, ежедневно</span>
         <span class="phone-number">8 812 450-25-25</span>
       </p>
+      </div>
     </header>
+    
     <main class="container">
       <div class="slider">
         <!-- Здесь будет непосредственно слайдер с кнопками-переключателями-->
@@ -56,85 +59,58 @@
         </li>
       </ul>
       <ul class="ice-cream-list">
-        <li class="ice-cream-1">
-          <p>
-            <a class="list-item-image" href="catalog.html">
-              <img src="img/product-1.jpg" width="160" height="84" alt="Сливочное">
-            </a>
-          </p>
+        <li class="ice-cream-item">
+          <img src="img/product-1.jpg" width="160" height="84" alt="Сливочное">
           <p class="ice-cream-price">
             <span class="ice-cream-price-figure">310 ₽</span>
             <span class="ice-cream-price-unit">/кг</span>
           </p>
-          <p class="description">
+          <a class="description" href="#">
             Сливочное с апельсиновым <br>
             джемом и цитрусовой стружкой
-          </p>
+          </a>
         </li>
-        <li class="ice-cream-2">
-          <p>
-            <a class="list-item-image" href="catalog.html">
-              <img src="img/product-2.jpg" width="160" height="84" alt="Сливочно-кофейное">
-            </a>
-          </p>
+        <li class="ice-cream-item">
+          <img src="img/product-2.jpg" width="160" height="84" alt="Сливочно-кофейное">
           <p class="ice-cream-price">
             <span class="ice-cream-price-figure">380 ₽</span>
             <span class="ice-cream-price-unit">/кг</span>
           </p>
-          <p class="description">
+          <a class="description" href="#">
             Сливочно-кофейное с кусочками <br>
             шоколада
-          </p>
+          </a>
         </li>
-        <li class="ice-cream-3">
-          <p>
-            <a class="list-item-image" href="catalog.html">
-              <img src="img/product-3.jpg" width="160" height="84" alt="Сливочно-клубничное">
-            </a>
-          </p>
+        <li class="ice-cream-item">
+          <img src="img/product-3.jpg" width="160" height="84" alt="Сливочно-клубничное">
           <p class="ice-cream-price">
             <span class="ice-cream-price-figure">355 ₽</span>
             <span class="ice-cream-price-unit">/кг</span>
           </p>
-          <p class="description">
+          <a class="description" href="#">
             Сливочно-клубничное с <br>
             присыпкой из белого шоколада
-          </p>
+          </a>
         </li>
-        <li class="ice-cream-4">
-          <p>
-            <a class="list-item-image" href="catalog.html">
-              <img src="img/product-4.jpg" width="160" height="84" alt="Сливочное крем-брюле">
-            </a>
-          </p>
+        <li class="ice-cream-item">
+          <img src="img/product-4.jpg" width="160" height="84" alt="Сливочное крем-брюле">
           <p class="ice-cream-price">
             <span class="ice-cream-price-figure">415 ₽</span>
             <span class="ice-cream-price-unit">/кг</span>
           </p>
-          <p class="description">
+          <a class="description" href="#">
             Сливочное крем-брюле с <br>
             карамельной подливкой
-          </p>
+          </a>
         </li>
       </ul>
       <section class="about-shop">
         <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-        <p class="about-shop-outline">
-          <img class="outline-tag" src="img/tag-1.jpg" width="50" height="50" alt="мороженое" >
-        <span class="outline-text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</span>
-        </p>
-        <p class="about-shop-outline">
-          <img class="outline-tag" src="img/tag-2.jpg" width="50" height="50" alt="листок" >
-        <span class="outline-text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</span>
-        </p>
-        <p class="about-shop-outline">
-          <img class="outline-tag" src="img/tag-3.jpg" width="50" height="50" alt="корова" >
-          <span class="outline-text">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</span>
-        </p>
-        <p class="about-shop-outline">
-          <img class="outline-tag" src="img/tag-4.jpg" width="50" height="50" alt="термометр" >
-          <span class="outline-text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</span>
-        </p>
+        <!-- Добавление картинок-иконок через псевдокласс ::before -->
+        <p class="about-shop-text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+        <p class="about-shop-text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+        <p class="about-shop-text">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+        <p class="outline-text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
       </section>
       <article class="blog-news">
         <h2 class="visually-hidden">Статья из блога.</h2>
@@ -149,11 +125,9 @@
         </p>
         <!-- Здесь будет форма подписки после дачи материала-->
       </div>
-      <span class="location-map">
-        <!-- Здесь будет располагаться карта -->
-      </span>
-      <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
+      <div class="location-map">
+        <img src="img/map.jpg" width="500" height="200" alt="как нас найти">
+        <div class="contacts">
         <p class="contacts-address">
           Адрес главного офиса<br>
           и офлайн-магазина:<br>
@@ -167,10 +141,12 @@
           <strong class="phone-number">8 812 450-25-25</strong><br>
         </p>
         <span class="feedback-button">Форма обратной связи</span>
-      </section>
+        </div>
+      </div>
     </main>
 
     <footer class="main-footer">
+      <div class="container">
       <ul>
         <li class="social-button"><a href="#">Твиттер</a></li>
         <li class="social-button"><a href="#">Инстаграм</a></li>
@@ -187,6 +163,7 @@
         <a href="https://htmlacademy.ru/">HTML Academy</a>
         <b>Сделано в HTML Academy © 2017</b>
       </p>
+      </div>
     </footer>
   </body>
 </html>
