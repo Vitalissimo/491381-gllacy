@@ -9,17 +9,15 @@
       <div class="container">
       <h1 class="visually-hidden">Магазин мороженого «Глэйси»</h1>
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/index-logo.svg" width="125" height="25" alt= "Логотип магазина «Gllacy»">
-        </a>
+        <img src="img/index-logo.svg" width="125" height="25" alt= "Логотип магазина «Gllacy»">
         <ul class="site-navigation">
           <li class="site-navigation-button"><a href="Catalog.html">Каталог</a>
             <ul class="site-catalog-list">
-              <li class="site-catalog-new-item"><a href="#">Новинки</a></li>
-              <li class="site-catalog-item"><a href="#">Сливочное</a></li>
-              <li class="site-catalog-item"><a href="#">Щербеты</a></li>
-              <li class="site-catalog-item"><a href="#">Фруктовый лед</a></li>
-              <li class="site-catalog-item"><a href="#">Мелорин</a></li>
+              <li class="site-catalog-item site-catalog-item-new"><a href="#">Новинки</a></li>
+              <li class="site-catalog-item site-catalog-item-new"><a href="#">Сливочное</a></li>
+              <li class="site-catalog-item site-catalog-item-new"><a href="#">Щербеты</a></li>
+              <li class="site-catalog-item site-catalog-item-new"><a href="#">Фруктовый лед</a></li>
+              <li class="site-catalog-item site-catalog-item-new"><a href="#">Мелорин</a></li>
             </ul>
           </li>
           <li class="site-navigation-button"><a href="Delivery.html">Доставка и оплата</a></li>
@@ -31,7 +29,7 @@
           <li class="shop-cart">Корзина</li>
         </ul>
       </nav>
-      <p>
+      <p class="contact-details">
         <span class="time-schedule">С 10 до 20, ежедневно</span>
         <span class="phone-number">8 812 450-25-25</span>
       </p>
@@ -44,22 +42,22 @@
         <span class="slider-text-1">Крем-брюле и пломбир с малиновым джемом</span>
         <span class="slider-text-2">Шоколадный пломбир и лимонный сорбет</span>
         <span class="slider-text-3">Пломбир с помадкой и клубничный щербет</span>
-        <button class="slider-button">Давайте оба!</button>
+        <button class="button slider-button">Давайте оба!</button>
       </div>
       <ul class="banner">
         <li class="banner-1">
           <span class="banner-title">Малинка даром!</span>
           <span class="banner-content">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</span>
-          <a href="#" class="banner-button">Хочу варенье!</a>
+          <a class="button banner-button" href="#">Хочу варенье!</a>
         </li>
         <li class="banner-2">
           <span class="banner-title">Шоколадки даром!</span>
           <span class="banner-content">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</span>
-          <a href="#" class="banner-button">Хочу шоколадки!</a>
+          <a class="button banner-button" href="#">Хочу шоколадки!</a>
         </li>
       </ul>
       <ul class="ice-cream-list">
-        <li class="ice-cream-item">
+        <li class="ice-cream-item ice-cream-item-hit">
           <img src="img/product-1.jpg" width="160" height="84" alt="Сливочное">
           <p class="ice-cream-price">
             <span class="ice-cream-price-figure">310 ₽</span>
@@ -69,8 +67,9 @@
             Сливочное с апельсиновым <br>
             джемом и цитрусовой стружкой
           </a>
+          <a class="button ice-cream-button-view" href="#">Быстрый просмотр</a>
         </li>
-        <li class="ice-cream-item">
+        <li class="ice-cream-item ice-cream-item-hit">
           <img src="img/product-2.jpg" width="160" height="84" alt="Сливочно-кофейное">
           <p class="ice-cream-price">
             <span class="ice-cream-price-figure">380 ₽</span>
@@ -80,8 +79,9 @@
             Сливочно-кофейное с кусочками <br>
             шоколада
           </a>
+          <a class="button ice-cream-button-view" href="#">Быстрый просмотр</a>
         </li>
-        <li class="ice-cream-item">
+        <li class="ice-cream-item ice-cream-item-hit">
           <img src="img/product-3.jpg" width="160" height="84" alt="Сливочно-клубничное">
           <p class="ice-cream-price">
             <span class="ice-cream-price-figure">355 ₽</span>
@@ -91,8 +91,9 @@
             Сливочно-клубничное с <br>
             присыпкой из белого шоколада
           </a>
+          <a class="button ice-cream-button-view" href="#">Быстрый просмотр</a>
         </li>
-        <li class="ice-cream-item">
+        <li class="ice-cream-item ice-cream-item-hit">
           <img src="img/product-4.jpg" width="160" height="84" alt="Сливочное крем-брюле">
           <p class="ice-cream-price">
             <span class="ice-cream-price-figure">415 ₽</span>
@@ -102,6 +103,7 @@
             Сливочное крем-брюле с <br>
             карамельной подливкой
           </a>
+          <a class="button ice-cream-button-view" href="#">Быстрый просмотр</a>
         </li>
       </ul>
       <section class="about-shop">
@@ -110,7 +112,7 @@
         <p class="about-shop-text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
         <p class="about-shop-text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
         <p class="about-shop-text">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-        <p class="outline-text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        <p class="about-shop-text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
       </section>
       <article class="blog-news">
         <h2 class="visually-hidden">Статья из блога.</h2>
