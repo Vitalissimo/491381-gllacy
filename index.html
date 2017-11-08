@@ -106,14 +106,16 @@
           <a class="button ice-cream-button-view" href="#">Быстрый просмотр</a>
         </li>
       </ul>
-      <section class="about-shop">
+      <div class="about-shop">
         <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
         <!-- Добавление картинок-иконок через псевдокласс ::before -->
-        <p class="about-shop-text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-        <p class="about-shop-text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-        <p class="about-shop-text">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-        <p class="about-shop-text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-      </section>
+        <ul>
+          <li class="about-shop-text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+          <li class="about-shop-text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+          <li class="about-shop-text">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+          <li class="about-shop-text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+        </ul>
+      </div>
       <article class="blog-news">
         <h2 class="visually-hidden">Статья из блога.</h2>
         <!-- По восприятию: изображение задается фоном в СSS для этого класса -->
@@ -127,9 +129,9 @@
         </p>
         <!-- Здесь будет форма подписки после дачи материала-->
       </div>
-      <div class="location-map">
-        <img src="img/map.jpg" width="500" height="200" alt="как нас найти">
-        <div class="contacts">
+      <div class="location-and-contacts"> <!-- Этому блоку с картой cкорее всего нужно задать ширину в % и position:absolute в CSS -->
+        <img class="location-map" src="img/map.jpg" width="100%" alt="Карта офиса по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        <div class="contact-info"> <!-- Этот блок отпозиционировать относительно location-and-contacts...по другому не придумал( -->
         <p class="contacts-address">
           Адрес главного офиса<br>
           и офлайн-магазина:<br>
@@ -142,21 +144,21 @@
           Для заказов по телефону:<br>
           <strong class="phone-number">8 812 450-25-25</strong><br>
         </p>
-        <span class="feedback-button">Форма обратной связи</span>
+        <button class="button feedback-button">Форма обратной связи</button>
         </div>
       </div>
     </main>
 
     <footer class="main-footer">
       <div class="container">
-      <ul>
-        <li class="social-button"><a href="#">Твиттер</a></li>
-        <li class="social-button"><a href="#">Инстаграм</a></li>
-        <li class="social-button"><a href="#">Фейсбук</a></li>
-        <li class="social-button"><a href="#">Вконтакте</a></li>
+      <ul class="social-icons">
+        <li class="social-button social-button-tw"><a href="#">Твиттер</a></li>
+        <li class="social-button social-button-inst"><a href="#">Инстаграм</a></li>
+        <li class="social-button social-button-fb"><a href="#">Фейсбук</a></li>
+        <li class="social-button social-button-vk"><a href="#">Вконтакте</a></li>
       </ul>
       <p class="additional-info">
-        <b class="info-for-suppliers"><a href="#">Для поставщиков</a></b>
+        <a class="info-for-suppliers" href="#"><b>Для поставщиков</b></a>
         <a href="#">О производстве</a>
         <a href="#">Наши документы</a>
         <a href="#">Экологические стандарты</a>
