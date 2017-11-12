@@ -123,11 +123,14 @@
         <a class="blog-news-content" href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </article>
       <div class="subscribe-form">
+        <h2 class="visually-hidden">Подписка на рассылку</h2>
         <p>
-          <!-- По восприятию: изображение задается фоном в CSS для этого класса -->
-          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+           Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
         </p>
-        <!-- Здесь будет форма подписки после дачи материала-->
+        <form class="subscribe-line" method="post" action="https://echo.htmlacademy.ru">
+          <input type="email" placeholder="Электронная почта" name="subscribe-email">
+          <button class="button button-subscribe" type="submit">Отправить</button>
+        </form>
       </div>
       <div class="location-and-contacts"> <!-- Этому блоку с картой cкорее всего нужно задать ширину в % и position:absolute в CSS -->
         <img class="location-map" src="img/map.jpg" width="100%" alt="Карта офиса по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
@@ -182,10 +185,10 @@
         <p>
           <label for="user-password"><span class="visually-hidden">Пароль</span></label>
           <input id="user-password" type="password" name="password" placeholder="Пароль">
-      </p>
-      <button class="button login-button" type="submit">Войти</button>
-      <a class="forgot-password-button" href="password-recovery.html">Забыли пароль?</a>
-      <a class="new-registration-button" href="new-registration.html">Новая регистрация</a>
+        </p>
+        <button class="button login-button" type="submit">Войти</button>
+        <a class="forgot-password-button" href="password-recovery.html">Забыли пароль?</a>
+        <a class="new-registration-button" href="new-registration.html">Новая регистрация</a>
       </form>
     </div>
 
@@ -204,6 +207,20 @@
     <!-- >>>>>>>>>> Форма обратной связи <<<<<<<<<<<<-->
     <div class="feedback-form">
       <h2>Мы обязательно вам ответим!</h2>
+      <form class="feedback" method="post" action="https://echo.htmlacademy.ru">
+        <p>
+          <label for="feedback-login"><span class="visually-hidden">Имя пользователя</span></label>
+          <input id="feedback-login" type="text" name="login" placeholder="Как вас зовут?">
+        </p>
+        <p>
+          <label for="feedback-email"><span class="visually-hidden">"Электронная почта"</span></label>
+          <input id="feedback-email" type="email" name="user-email" placeholder="Ваша почта для ответа?">
+      </p>
+      <p><textarea name="feedback-text" cols="1" rows="5" placeholder="Напишите что-нибудь..." /></textarea></p>
+      <button class="button button-submit" type="submit">Отправить</button>
+      </form>
     </div>
+
+
   </body>
 </html>
