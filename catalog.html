@@ -10,11 +10,18 @@
       <h1 class="visually-hidden">Магазин мороженого «Глэйси» - Каталог товаров</h1>
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="img/index-logo.svg" width="125" height="25" alt= "Логотип магазина «Gllacy»">
+          <img src="img/icons/logo.svg" width="125" height="25" alt= "Логотип магазина «Gllacy»">
         </a>
         <ul class="site-navigation">
-          <li class="site-navigation-button-active">Каталог</li>
-          <!-- Нужно ли здесь выпадающее меню, как на главной странице? -->
+          <li class="site-navigation-button-active"><a>Каталог</a>
+            <ul class="site-catalog-list">
+              <li class="site-catalog-item site-catalog-item-new"><a href="#">Новинки</a></li>
+              <li class="site-catalog-item"><a href="#">Сливочное</a></li>
+              <li class="site-catalog-item"><a href="#">Щербеты</a></li>
+              <li class="site-catalog-item"><a href="#">Фруктовый лед</a></li>
+              <li class="site-catalog-item"><a href="#">Мелорин</a></li>
+            </ul>
+          </li>
           <li class="site-navigation-button"><a href="Delivery.html">Доставка и оплата</a></li>
           <li class="site-navigation-button"><a href="contacts.html">О компании</a></li>
         </ul>
@@ -42,7 +49,7 @@
       <div class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset>
+          <fieldset class="filter-sort">
             <legend>Сортировка:</legend>
             <select class="form-cell form-cell-sort" name="sorting">
                 <option value="popular">по популятности</option>
@@ -52,52 +59,52 @@
             </select>
           </fieldset>
           <fieldset>
-            <legend>Цена:</legend>
+            <legend class="filter-price">Цена:</legend>
             <div class="form-cell form-cell-price">
               <span class="slider-handle-1" tabindex="0"></span>
               <span class="slider-line-1"></span>
               <span class="slider-line-2"></span>
               <span class="slider-handle-2" tabindex="0"></span>
             </div>
-          </fieldset>
+          </fieldset class="filter-fat">
           <fieldset>
             <legend>Жирность:</legend>
-            <p>
+            <p class="fat-indicator-button">
               <input type="radio" name="fat-indicator" id="fat-indicator-zero">
               <label for="fat-indicator-zero">0%</label>
             </p>
-            <p>
+            <p class="fat-indicator-button fat-indicator-button-checked">
               <input type="radio" name="fat-indicator" id="fat-indicator-ten" checked>
               <label for="fat-indicator-ten">до 10%</label>
             </p>
-            <p>
+            <p class="fat-indicator-button>
               <input type="radio" name="fat-indicator" id="fat-indicator-thirty">
               <label for="fat-indicator-thirty">до 30%</label>
             </p>
-            <p>
+            <p class="fat-indicator-button>
               <input type="radio" name="fat-indicator" id="fat-indicator-thirty-more">
               <label for="fat-indicator-thirty-more">выше 30%</label>
             </p>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-filler">
             <legend>Наполнители:</legend>
-            <p>
+            <p class="filler-checkbox filler-checkbox-checked">
               <input type="checkbox" name="filler" id="filler-chocolate" checked>
               <label for="filler-chocolate">шоколадные</label>
             </p>
-            <p>
+            <p class="filler-checkbox filler-checkbox-checked">
               <input type="checkbox" name="filler" id="filler-sugar" checked>
               <label for="filler-sugar">сахарные присыпки</label>
             </p>
-            <p>
+            <p class="filler-checkbox">
               <input type="checkbox" name="filler" id="filler-fruit">
               <label for="filler-fruit">фрукты</label>
             </p>
-            <p>
+            <p class="filler-checkbox">
               <input type="checkbox" name="filler" id="filler-sirup">
               <label for="filler-sirup">сиропы</label>
             </p>
-            <p>
+            <p class="filler-checkbox">
               <input type="checkbox" name="filler" id="filler-jam">
               <label for="filler-jam">джемы</label>
             </p>
@@ -274,9 +281,9 @@
       <h2 class="visually-hidden">Дополнительная информация о нас</h2>
       <p class="additional-info">
         <a class="info-for-suppliers" href="#"><b>Для поставщиков</b></a>
-        <a href="#">О производстве</a>
-        <a href="#">Наши документы</a>
-        <a href="#">Экологические стандарты</a>
+        <a class="info-about-production" href="#">О производстве</a>
+        <a class="info-our-docs" href="#">Наши документы</a>
+        <a class="info-eco-standards" href="#">Экологические стандарты</a>
       </p>
       <p class="footer-copyright">
         <a href="https://htmlacademy.ru/"><span class="visually-hidden">HTML Academy</span></a>
