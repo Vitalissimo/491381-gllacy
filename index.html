@@ -25,38 +25,39 @@
           <li class="site-navigation-button"><a href="contacts.html">О компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="site-search">Поиск</li>
-          <!-- >>> Форма поиска <<< -->
-          <div class="search-form">
-            <h2 class="visually-hidden">Форма поиска</h2>
-            <form class="search" method="get" action="https://echo.htmlacademy.ru">
-              <p>
-                <label for="site-search"><span class="visually-hidden">Поле поиска</span></label>
-                <input id="site-search" type="search" name="search" placeholder="Что ищем?">
-              </p>
-              <input type="submit" value="">
-            </form>
-          </div>
-          <!-- >>>-// Конец формы поиска <<< -->
-          <li class="login-link">Вход</li>
+          <li class="site-search">Поиск
+            <!-- >>> Форма поиска <<< -->
+            <div class="search-form">
+              <h2 class="visually-hidden">Форма поиска</h2>
+              <form class="search" method="get" action="https://echo.htmlacademy.ru">
+                <p>
+                  <label for="site-search"><span class="visually-hidden">Поле поиска</span></label>
+                  <input id="site-search" type="search" name="search" placeholder="Что ищем?">
+                </p>
+                <input type="submit" value="">
+              </form>
+            </div>
+          </li>  <!-- >>>-// Конец формы поиска <<< -->
+          <li class="login-link">Вход
           <!-- >>> Форма входа в личный кабинет <<< -->
-          <div class="user-login-form">
-            <h2 class="visually-hidden">Вход в личный кабинет</h2>
-            <form class="user" method="post" action="https://echo.htmlacademy.ru">
-              <p>
-                <label for="user-login"><span class="visually-hidden">Логин</span></label>
-                <input id="user-login" type="text" name="login" placeholder="Электронная почта">
-              </p>
-              <p>
-                <label for="user-password"><span class="visually-hidden">Пароль</span></label>
-                <input id="user-password" type="password" name="password" placeholder="Пароль">
-              </p>
-              <button class="button login-button" type="submit">Войти</button>
-              <a class="forgot-password-button" href="password-recovery.html">Забыли пароль?</a>
-              <a class="new-registration-button" href="new-registration.html">Новая регистрация</a>
-            </form>
-          </div>
-          <!-- >>>-// Конец формы входа в личный кабинет <<< -->
+            <div class="user-login-form">
+              <h2 class="visually-hidden">Вход в личный кабинет</h2>
+              <form class="user" method="post" action="https://echo.htmlacademy.ru">
+                <p>
+                  <label for="user-login"><span class="visually-hidden">Логин</span></label>
+                  <input id="user-login" type="text" name="login" placeholder="Электронная почта">
+                </p>
+                <p>
+                  <label for="user-password"><span class="visually-hidden">Пароль</span></label>
+                  <input id="user-password" type="password" name="password" placeholder="Пароль">
+                </p>
+                <button class="button login-button" type="submit">Войти</button>
+                <a class="forgot-password-button" href="password-recovery.html">Забыли пароль?</a>
+                <a class="new-registration-button" href="new-registration.html">Новая регистрация</a>
+              </form>
+            </div>
+            <!-- >>>-// Конец формы входа в личный кабинет <<< -->
+          </li>
           <li class="shop-cart">Корзина</li>
         </ul>
       </nav>
@@ -164,9 +165,9 @@
         </form>
       </div>
       <!-- >>>-//Конец формы подписки на новости <<< -->
-      <div class="location-and-contacts"> <!-- Этому блоку с картой cкорее всего нужно задать ширину в % и position:absolute в CSS -->
-        <img class="location-map" src="img/map.jpg" width="100%" alt="Карта офиса по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
-        <div class="contact-info"> <!-- Этот блок отпозиционировать относительно location-and-contacts...по другому не придумал( -->
+      <div class="location-and-contacts"> 
+        <img class="location-map" src="img/background-images/map.jpg" width="1200" alt="Карта офиса по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        <div class="contact-info"> 
         <p class="contacts-address">
           Адрес главного офиса<br>
           и офлайн-магазина:<br>
@@ -194,7 +195,7 @@
             <label for="feedback-email"><span class="visually-hidden">"Электронная почта"</span></label>
             <input id="feedback-email" type="email" name="user-email" placeholder="Ваша почта для ответа?">
         </p>
-        <p><textarea name="feedback-text" cols="1" rows="5" placeholder="Напишите что-нибудь..." /></textarea></p>
+        <p><textarea name="feedback-text" cols="1" rows="5" placeholder="Напишите что-нибудь..."></textarea></p>
         <button class="button button-submit" type="submit">Отправить</button>
         </form>
       </div>
@@ -205,7 +206,7 @@
       <div class="container">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <ul class="social-icons">
-        <li class="social-button social-button-tw"><a href="#"><span class="visually-hidden">Твиттер</span>/a></li>
+        <li class="social-button social-button-tw"><a href="#"><span class="visually-hidden">Твиттер</span></a></li>
         <li class="social-button social-button-inst"><a href="#"><span class="visually-hidden"></span>Инстаграм</a></li>
         <li class="social-button social-button-fb"><a href="#"><span class="visually-hidden"></span>Фейсбук</a></li>
         <li class="social-button social-button-vk"><a href="#"><span class="visually-hidden"></span>Вконтакте</a></li>
@@ -213,9 +214,9 @@
       <h2 class="visually-hidden">Дополнительная информация о нас</h2>
       <p class="additional-info">
         <a class="info-for-suppliers" href="#"><b>Для поставщиков</b></a>
-        <a href="#">О производстве</a>
-        <a href="#">Наши документы</a>
-        <a href="#">Экологические стандарты</a>
+        <a class="info-about-production" href="#">О производстве</a>
+        <a class="info-our-docs" href="#">Наши документы</a>
+        <a class="info-eco-standards" href="#">Экологические стандарты</a>
       </p>
       <p class="footer-copyright">
         <a href="https://htmlacademy.ru/"><span class="visually-hidden">HTML Academy</span></a>

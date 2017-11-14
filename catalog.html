@@ -46,6 +46,7 @@
         <li class="breadcrumbs-current">Сливочное</li>
       </ul>
       <h2>Сливочное мороженое</h2>
+      <!-- >>> Форма фильтра товаров <<< -->
       <div class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="post">
@@ -58,16 +59,16 @@
                 <option value="fat-rate">по жирности</option>
             </select>
           </fieldset>
-          <fieldset>
-            <legend class="filter-price">Цена:</legend>
+          <fieldset class="filter-price">
+            <legend>Цена:</legend>
             <div class="form-cell form-cell-price">
               <span class="slider-handle-1" tabindex="0"></span>
               <span class="slider-line-1"></span>
               <span class="slider-line-2"></span>
               <span class="slider-handle-2" tabindex="0"></span>
             </div>
-          </fieldset class="filter-fat">
-          <fieldset>
+          </fieldset>
+          <fieldset class="filter-fat">
             <legend>Жирность:</legend>
             <p class="fat-indicator-button">
               <input type="radio" name="fat-indicator" id="fat-indicator-zero">
@@ -77,11 +78,11 @@
               <input type="radio" name="fat-indicator" id="fat-indicator-ten" checked>
               <label for="fat-indicator-ten">до 10%</label>
             </p>
-            <p class="fat-indicator-button>
+            <p class="fat-indicator-button">
               <input type="radio" name="fat-indicator" id="fat-indicator-thirty">
               <label for="fat-indicator-thirty">до 30%</label>
             </p>
-            <p class="fat-indicator-button>
+            <p class="fat-indicator-button">
               <input type="radio" name="fat-indicator" id="fat-indicator-thirty-more">
               <label for="fat-indicator-thirty-more">выше 30%</label>
             </p>
@@ -112,7 +113,7 @@
           <button class="catalog-form" type="submit">Применить</button>
         </form>
       </div>
-
+      <!-- >>> Конец формы фильтра товаров <<< -->
       <ul class="ice-cream-list">
         <li class="ice-cream-item">
           <img src="img/products/product-1.jpg" width="267" height="267" alt="Сливочное">
@@ -273,10 +274,10 @@
       <div class="container">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <ul class="social-icons">
-        <li class="social-button social-button-tw"><a href="#"><span class="visually-hidden">Твиттер</span>/a></li>
+        <li class="social-button social-button-tw"><a href="#"><span class="visually-hidden">Твиттер</span></a></li>
         <li class="social-button social-button-inst"><a href="#"><span class="visually-hidden"></span>Инстаграм</a></li>
         <li class="social-button social-button-fb"><a href="#"><span class="visually-hidden"></span>Фейсбук</a></li>
-        <li class="social-button social-button-vk"><a href="#"><span class="visually-hidden"></span>Вконтакте</a></li
+        <li class="social-button social-button-vk"><a href="#"><span class="visually-hidden"></span>Вконтакте</a></li>
       </ul>
       <h2 class="visually-hidden">Дополнительная информация о нас</h2>
       <p class="additional-info">
