@@ -28,7 +28,33 @@
         <ul class="user-navigation">
           <li class="site-search">Поиск</li>
           <li class="login-link">Вход</li>
-          <li class="shop-cart shop-cart-full">Корзина</li>
+          <li class="shop-cart shop-cart-full">Корзина
+          <!-- >>> Форма корзины с товарами <<<-->
+          <div class="cart">
+            <table class="open-cart">
+              <tr>
+                  <td><button class="remove-item"></button></td>
+                  <td class="selected-product"><img src="img/products-in-cart/ice-cream-1.svg" alt="Мороженое-пломбир"></td>
+                  <td class="selected-product-name">Пломбир с апельсиновым джемом</td>
+                  <td class="selected-product-quantity">1,5 кг х</td>
+                  <td class="selected-product-price">200 руб.</td>
+                  <td class="selected-product-total">300 руб.</td>
+              </tr>
+              <tr>
+                  <td><button class="remove-item"></button></td>
+                  <td class="selected-product"><img src="img/products-in-cart/ice-cream-2.svg" alt="Мороженое-пломбир"></td>
+                  <td class="selected-product-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td class="selected-product-quantity">1,5 кг х</td>
+                  <td class="selected-product-price">300 руб.</td>
+                  <td class="selected-product-total">450 руб.</td>
+              </tr>
+              <tr>
+                <td class="total-value" colspan="6">Итого: 750 руб.</td></tr>
+            </table>
+            <button class="button button-in-cart">Оформить заказ</button> 
+          </div>
+          <!-- >>>-//Конец формы корзины с товарами <<<-->
+          </li>
         </ul>
       </nav>
       <p class="contact-details">
@@ -293,25 +319,6 @@
       </div>
     </footer>  
 
-    <!-- <div class="table-responsive">
-        <table class="table table-hover table-bordered">
-            <thead>
-                <tr>
-                    <th>Артикул</th>
-                    <th>Название</th>
-                    <th>Цена</th>
-                    <th>Количество</th>
-                    <th>Сумма</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody id="cart">
-                <tr><td colspan="6"><img src="img/loading.gif" alt=""></td></tr>
-            </tbody>
-        </table>
-    </div>
-    <div>Итого: <span id="total-cart-summa">0</span> руб.</div>
-    <br>
-    <button id="order" class="btn btn-info">Оформить заказ</button>  
-  </body> -->
+
+  </body>
 </html>

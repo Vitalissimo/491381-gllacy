@@ -69,13 +69,28 @@
     </header>
 
     <main class="container">
+      <!-- >>> Слайдер с кнопками-переключателями <<<-->
       <div class="slider">
-        <!-- Здесь будет непосредственно слайдер с кнопками-переключателями-->
-        <span class="slider-text-1">Крем-брюле и пломбир с малиновым джемом</span>
-        <span class="slider-text-2">Шоколадный пломбир и лимонный сорбет</span>
-        <span class="slider-text-3">Пломбир с помадкой и клубничный щербет</span>
-        <button class="button slider-button">Давайте оба!</button>
+        <ul class="slides">
+          <li class="slide-1">
+            <img src="img/slider/slider-ice-cream-1.jpg" width="1045" alt="Крем-брюле">
+            <p class="slider-text-1">Крем-брюле и пломбир с малиновым джемом</p>
+            <button class="slide-btn">Первый слайд</button>
+          </li>
+          <li class="slide-2">
+            <img src="img/slider/slider-ice-cream-2.jpg" width="1065" alt="Шоколадный пломбир">
+            <p class="slider-text-2">Шоколадный пломбир и лимонный сорбет</p>
+            <button class="slide-btn">Второй слайд</button>
+          </li>
+          <li class="slide-3">
+            <img src="img/slider/slider-ice-cream-3.jpg" width="1079" alt="Пломбир с помадкой">
+            <p class="slider-text-3">Пломбир с помадкой и клубничный щербет</p>
+            <button class="slide-btn">Третий слайд</button>
+          </li>
+        </ul>
+        <a class="button slider-main-button">Давайте оба!</a>
       </div>
+      <!-- >>> Конец слайдера с кнопками-переключателями <<<-->
       <ul class="banner">
         <li class="banner-1">
           <span class="banner-title">Малинка даром!</span>
@@ -165,7 +180,7 @@
         </form>
       </div>
       <!-- >>>-//Конец формы подписки на новости <<< -->
-      <div class="location-and-contacts"> 
+      <div class="container location-and-contacts"> 
         <img class="location-map" src="img/background-images/map.jpg" width="1200" alt="Карта офиса по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
         <div class="contact-info"> 
         <p class="contacts-address">
