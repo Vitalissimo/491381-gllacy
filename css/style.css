@@ -1,0 +1,134 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #ffffff;
+	
+	background-color: #849d8f;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-navigation {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 18px;
+}
+
+.site-navigation,
+.user-navigation,
+.site-catalog-list {
+	list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+	color: #000000;
+	background-color: #ffffff ;
+}
+
+.site-catalog-list {
+	background-color: #ffffff;
+
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 16px;	
+}
+
+.site-catalog-item-new {
+	font-weight: bold;
+}
+
+.site-catalog-list a {
+	color: #000000;
+}
+
+.site-catalog-list a:hover,
+.site-catalog-list a:focus {
+	background-color: #fbded7;
+}
+
+.site-catalog-list a:active {
+	background-color: #f6b5a5;
+}
+
+.user-navigation {
+	background-color: rgba(255, 255, 255, 0.2);
+
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 16px;
+}
+
+.contact-details {
+	font-weight: bold;
+}
+
+.time-schedule {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 16px;
+}
+
+.phone-number {
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 24px;
+}
+
+.banner {
+	font-weight: bold;
+	color: #ffffff;
+	list-style: none;
+}
+
+.banner-1 {
+	background-image: url(../img/background-images/raspberry-background.jpg);
+}
+
+.banner-2 {
+	background-image: url(../img/background-images/chocolate-background.jpg);
+}
+
+.banner-title {
+	font-size: 35px;
+	line-height: 41px;
+}
+
+.ice-cream-list {
+	list-style: none;
+	font-weight: 500;
+	color: white;
+}
+
+.ice-cream-price-figure {
+	font-weight: bold;
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.ice-cream-price-unit {
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 45px;
+}
+
+.description {
+	color: white;
+	text-align: center;
+}
+
+.about-shop li {
+	list-style: none;
+}
