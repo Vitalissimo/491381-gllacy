@@ -63,7 +63,9 @@ a {
 	background-color: #f6b5a5;
 }
 
-.user-navigation {
+.site-search,
+.login-link,
+.shop-cart {
 	background-color: rgba(255, 255, 255, 0.2);
 
 	font-size: 14px;
@@ -85,6 +87,13 @@ a {
 	font-size: 22px;
 	font-weight: bold;
 	line-height: 24px;
+}
+
+.button {
+	background-color: #f06441;
+
+	font-weight: bold;
+	color: #ffffff;
 }
 
 .banner {
@@ -129,6 +138,107 @@ a {
 	text-align: center;
 }
 
+.about-shop {
+	background-image: url(../img/background-images/vaffel-background.jpg);
+	color: #000000;
+}
+
 .about-shop li {
 	list-style: none;
+}
+
+.about-shop h2 {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 500;
+}
+
+.about-shop-text {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: : 22px;
+}
+
+.blog-news {
+	background-image: url(../img/background-images/strawberry-background.jpg);
+	color: #000000;
+}
+
+.blog-news-description {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: : 22px;
+}
+
+.blog-news-content {
+	color: #000000;
+
+	font-weight: bold;
+	font-size: 24px;
+	line-height: : 30px;
+	text-decoration: underline;
+}
+
+.subscribe-form {
+	background-image: url(../img/background-images/bg-post.svg);
+	background-repeat: no-repeat;
+	color: #000000;
+}
+
+.subscribe-form p {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: : 22px;
+}
+
+.contact-info {
+	background-color: #ffffff;
+	color: #000000;
+
+}
+
+.contacts-address,
+.contacts-phone {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: : 20px;
+}
+
+.contacts-address strong {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: : 24px;
+}
+
+.phone-number	{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: : 22px;
+}
+
+.contacts-work-hours {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: : 22px;
+}
+
+.social-icons {
+	list-style: none;
+}
+
+.additional-info a {
+	text-decoration: none;
+	color:#ffffff;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: : 18px;
+
+}
+
+.footer-copyright a {
+	text-decoration: none;
+	font-weight: normal;
+	color:#ffffff;
+	font-size: 12px;
+	line-height: : 18px;
 }
