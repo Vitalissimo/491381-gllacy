@@ -89,6 +89,17 @@ a {
 	line-height: 24px;
 }
 
+.slides {
+	list-style: none;
+	
+}
+
+.slider-text {
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 60px;
+	text-align: center;
+}
 .button {
 	background-color: #f06441;
 
@@ -222,6 +233,18 @@ a {
 	line-height: : 22px;
 }
 
+.feedback-form {
+	background-color: #f8f7f4;
+}
+
+.feedback-form h2 {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: : 28px;
+	color: #000000;
+}
+
+
 .social-icons {
 	list-style: none;
 }
@@ -241,4 +264,44 @@ a {
 	color:#ffffff;
 	font-size: 12px;
 	line-height: : 18px;
+}
+
+.breadcrumbs li,
+.breadcrumbs a {
+	list-style: none;
+
+	text-decoration: none;
+	color:#ffffff;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: : 16px;
+}
+
+fieldset {
+	border: none;
+	color: #ffffff;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: : 16px;
+	background-color: #a9b9af;
+}
+
+.form-cell {
+	background-color: #a9bab0;
+}
+
+.form-cell-sort {
+	color: #ffffff;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: : 18px;
+}
+
+button.catalog-form {
+	background-color: #a6b7ad;
+	color: #ffffff;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: : 18px;
+	border: 2px solid #ffffff;
 }
