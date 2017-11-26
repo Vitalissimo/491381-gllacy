@@ -9,6 +9,7 @@ body {
 }
 
 .site-wrapper {
+<<<<<<< HEAD
     min-width: 1200px;
     background-color: #849d8f;
     background-image: url(../img/slider/slider-ice-cream-1.png);
@@ -21,6 +22,19 @@ body {
     padding: 0 2.3%;
     position: relative;
     transition: background-image 0.5s ease, background-color 0.5s ease;
+=======
+  width: 100%;
+  background-color: #849d8f;
+  background-image: url(../img/slider/slider-ice-cream-1.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+>>>>>>> parent of 378e429... Тестовые изменения
 }
 
 .site-wrapper::before,
@@ -38,9 +52,15 @@ body {
 }
 
 .container {
+<<<<<<< HEAD
     width: 1146px;
     margin: 0 auto;
     padding: 0;
+=======
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0;
+>>>>>>> parent of 378e429... Тестовые изменения
 }
 
 .slider {
@@ -446,8 +466,13 @@ input[type="radio"].visually-hidden {
 /*>>> Блок Шапки <<<*/
 
 .main-header {
+<<<<<<< HEAD
     margin-bottom: 75px;
     width: auto;
+=======
+  margin-bottom: 75px;
+  width:auto;
+>>>>>>> parent of 378e429... Тестовые изменения
 }
 
 .main-navigation {
