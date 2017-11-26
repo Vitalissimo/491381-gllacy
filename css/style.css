@@ -16,8 +16,10 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   color: #ffffff;
+  margin: 0;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 2.3%
   position: relative;
 
   transition: background-image 0.5s ease, background-color 0.5s ease;
@@ -37,9 +39,10 @@ body {
   background-image: url("../img/slider/slider-ice-cream-3.png");
 }
 .container {
-  width: 1146px;
+  width: 1200px;
   margin: 0 auto;
-  padding: 0;
+  padding-left: 2.3%;
+  padding-right: 2.3%;
 }
 
 .slider {
@@ -464,8 +467,10 @@ input[type="radio"].visually-hidden {
 /*>>>>>>>>>> Начало блока построения сеток<<<<<<<<<<*/
 /*>>> Блок Шапки <<<*/
 .main-header {
+	margin: 0;
+	padding: 0;
   margin-bottom: 75px;
-  width:auto;
+  
 }
 
 .main-navigation {
