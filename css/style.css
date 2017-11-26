@@ -644,3 +644,176 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 }
+
+/*>>> Стили корзины <<<*/
+
+.cart {
+    /*display: none;*/
+  position: absolute;
+  z-index: 20;
+  top: 36px;
+  right: 0;
+  padding-left: 17px;
+  padding-right: 14px;
+  padding-top: 20px;
+  padding-bottom: 19px;
+  width: 509px;
+  min-height: 204px;
+  font-size: 0;
+  color: #323232;
+  background-color: #f8f7f4;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+.shop-cart-full:hover .cart {
+  display: block;
+}
+.cart .delete-btn::before,
+.cart .delete-btn::after {
+  width: 14px;
+  height: 1px;
+  background-color: #515050;
+}
+.delete-item-btn.delete-btn {
+  width: 11px;
+  height: 11px;
+}
+.item-1 .delete-item-btn.delete-btn {
+  top: 26px;
+  left: 17px;
+}
+.item-2 .delete-item-btn.delete-btn {
+  top: 80px;
+  left: 17px;
+}
+.open-cart {
+  margin-bottom: 15px;
+}
+.open-cart tr {
+	display: block;
+}
+.open-cart td {
+  display: inline-block;
+  vertical-align: top;
+}
+.item-img {
+  margin-right: 7px;
+  padding-left: 18px;
+}
+.item-1 .item-img {
+  margin-top: -8px;
+}
+.item-2 .item-img {
+  margin-top: -9px;
+}
+.item-img img {
+  border-radius: 50%;
+}
+.item-name {
+  margin-right: 26px;
+  width: 216px;
+}
+.item-name a:hover,
+.item-name a:active {
+  border-bottom: 1px solid rgba(236, 89, 60, 0.3);
+  color: #e84d37;
+}
+.item-price {
+  margin-left: -3px;
+  margin-right: 24px;
+  color: #999999;
+}
+.item-1 {
+  margin-bottom: 21px;
+  padding-top: 6px;
+}
+.item-2 {
+  margin-bottom: 29px;
+  padding-top: 2px;
+}
+.item-1,
+.item-2,
+.item-name a {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+  text-decoration: none;
+  border: none;
+}
+.total {
+  margin-right: 7px;
+  margin-bottom: 36px;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #333333;
+  text-align: right;
+}
+.total:before {
+  content: "";
+  position: absolute;
+  bottom: 111px;
+  left: 16px;
+  width: 510px;
+  height: 1px;
+  background-color: #cacac7;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #fff;
+    background: #f26843;
+    background: linear-gradient(to bottom,#f26843 0,#e74a35 100%);
+    border-radius: 100px;
+    box-shadow: 0 2px 2px rgba(172,16,0,.64);
+
+    text-decoration: none;
+    text-shadow: 0 2px 5px rgba(160,32,11,.76);
+    vertical-align: top;
+    cursor: pointer;
+}
+.purchase-btn {
+  position: absolute;
+  bottom: 23px;
+  right: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.close-btn.delete-btn {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  width: 19px;
+  height: 19px;
+  outline: none;
+}
+.delete-btn {
+  position: absolute;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.delete-btn::before,
+.delete-btn::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: -1px;
+  width: 22px;
+  height: 2px;
+  background-color: #000000;
+}
+.delete-btn::before {
+  transform: rotate(45deg);
+}
+.delete-btn::after {
+  transform: rotate(-45deg);
