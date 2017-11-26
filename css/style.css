@@ -543,6 +543,7 @@ input[type="radio"].visually-hidden {
 .ice-cream-list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     box-sizing: border-box;
 }
@@ -612,13 +613,34 @@ input[type="radio"].visually-hidden {
     background-image: url(../img/background-images/map.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    box-sizing: border-box;
+}
+
+.address-container {
+	display: flex;
+	flex-direction: row-reverse;
+	flex-basis: inherit;
+	flex-wrap: wrap;
 }
 
 .contact-info {
     width: 303px;
     min-height: 305px;
     border-radius: 10px;
-    position: absolute;
-    right: 20px;
-    bottom: 40px;
+   	margin-right: 80px;	
+}
+
+.footer-container {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 1146px;
+	margin-left: auto;
+	margin-right:auto;
+	padding:0;
+}
+
+.social-icons {
+	margin: 0;
+	padding: 0;
 }
