@@ -525,28 +525,29 @@ input[type="radio"].visually-hidden {
 /*>>> Блок товаров <<<*/
 
 .ice-cream-item {
-    margin: 0;
+    margin: 0 13px;
     padding: 0;
     width: 22.2%;
     max-height: 407px;
 }
 
+
 .ice-cream-list {
-    width: 1146px;
-    padding: 0;
+    width: 1200px;
+    padding: 0 14px;
     margin: 0;
     margin-top: 33px;
     margin-left: auto;
     margin-right: auto;
-}
 
-.ice-cream-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     box-sizing: border-box;
 }
+
+
 
 
 /*>>>-// Конец Блока товаров <<<*/
@@ -606,10 +607,12 @@ input[type="radio"].visually-hidden {
 /*>>> Блок Карта и контакты <<<*/
 
 .location-and-contacts {
-    margin: 0;
+    margin-left: auto;
+    margin-rignt: auto;
     margin-top: 40px;
     width: 100%;
     min-height: 430px;
+    height: 1px;
     background-image: url(../img/background-images/map.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -621,13 +624,15 @@ input[type="radio"].visually-hidden {
 	flex-direction: row-reverse;
 	flex-basis: inherit;
 	flex-wrap: wrap;
+  height: 100%;
+  align-items:center;
 }
 
 .contact-info {
     width: 303px;
     min-height: 305px;
     border-radius: 10px;
-   	margin-right: 80px;	
+   	margin-right: 27px;	
 }
 
 .footer-container {
@@ -651,7 +656,7 @@ input[type="radio"].visually-hidden {
     /*display: none;*/
   position: absolute;
   z-index: 20;
-  top: 36px;
+  top: 76px;
   right: 0;
   padding-left: 17px;
   padding-right: 14px;
@@ -767,16 +772,16 @@ input[type="radio"].visually-hidden {
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
-    color: #fff;
     background: #f26843;
-    background: linear-gradient(to bottom,#f26843 0,#e74a35 100%);
-    border-radius: 100px;
-    box-shadow: 0 2px 2px rgba(172,16,0,.64);
-
-    text-decoration: none;
-    text-shadow: 0 2px 5px rgba(160,32,11,.76);
+    color: #ffffff;
     vertical-align: top;
-    cursor: pointer;
+    text-decoration: none;
+    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+    background: #f26843;
+    background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+    border-radius: 50px;
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+    border: none;
 }
 .purchase-btn {
   position: absolute;
@@ -817,3 +822,16 @@ input[type="radio"].visually-hidden {
 }
 .delete-btn::after {
   transform: rotate(-45deg);
+}
+  /*Форма фильтров*/
+.filters {
+    display:flex;
+    flex-direction:row;
+  }
+
+.pagination-list {
+  list-style:none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
