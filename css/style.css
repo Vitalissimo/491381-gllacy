@@ -23,6 +23,16 @@ body {
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
+.catalog-wrapper {
+  min-width: 1200px;
+  background-color: #849d8f;
+  color: #ffffff;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2.3%; 
+}
+
 .site-wrapper::before,
 .site-wrapper::after {
   content: "";
@@ -51,6 +61,7 @@ body {
 
 .slides {
   margin: 0;
+  margin-top: 60px;
   padding: 0;
   list-style: none;
 }
@@ -150,8 +161,14 @@ body {
 
 a {
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
+img {
+  margin: 0;
+  padding: 0;
+}
 .main-navigation {
   font-size: 16px;
   font-weight: bold;
@@ -208,8 +225,18 @@ a {
   line-height: 16px;
 }
 
+.breadcrumbs-contacts-wrapper {
+  margin: 0 auto;
+  padding: 0;
+  width:1146px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .contact-details {
   font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 .time-schedule {
@@ -263,6 +290,7 @@ a {
 
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   box-sizing: border-box;
 }
@@ -454,7 +482,7 @@ input[type="radio"].visually-hidden {
 /*>>> Блок Шапки <<<*/
 
 .main-header {
-  margin-bottom: 75px;
+  margin:0;
   width: auto;
 }
 
@@ -468,7 +496,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin-top: 10px;
   width: 155px;
-  height: 65px;
+  height: 68px;
 }
 
 .site-navigation {
@@ -649,7 +677,7 @@ input[type="radio"].visually-hidden {
 /*>>> Стили корзины <<<*/
 
 .cart {
-  /*display: none;*/
+  display: none;
   position: absolute;
   z-index: 20;
   top: 76px;
@@ -819,13 +847,31 @@ input[type="radio"].visually-hidden {
 .delete-btn::after {
   transform: rotate(-45deg);
 }
+
+/*Хлебные крошки*/
+
+.breadcrumbs{
+  margin:0;
+  padding: 0;
+  width:220px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
 /*Форма фильтров*/
-.filters {
+.catalog-filter {
+  width: 1146px;
+  margin: 0 auto;
+
   display:flex;
   flex-direction:row;
+  justify-content: space-between;
 }
 
 .pagination-list {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0;
   list-style:none;
   display: flex;
   flex-direction: row;
