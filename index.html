@@ -26,28 +26,26 @@
               <li class="site-navigation-button"><a href="Catalog.html">Каталог</a>
                 <ul class="site-catalog-list">
                   <li class="site-catalog-item site-catalog-item-new"><a href="#">Новинки</a></li>
-                  <li class="site-catalog-item"><a href="#">Сливочное</a></li>
+                  <li class="site-catalog-item" ><a href="#">Сливочное</a></li>
                   <li class="site-catalog-item"><a href="#">Щербеты</a></li>
                   <li class="site-catalog-item"><a href="#">Фруктовый лед</a></li>
-                  <li class="site-catalog-item"><a href="#">Мелорин</a></li>
+                  <li class="site-catalog-item"><a class="site-catalog-item"href="#">Мелорин</a></li>
                 </ul>
               </li>
-              <li class="site-navigation-button"><a href="delivery.html">Доставка и оплата</a></li>
+              <li class="site-navigation-button" ><a href="delivery.html">Доставка и оплата</a></li>
               <li class="site-navigation-button"><a href="contacts.html">О компании</a></li>
             </ul>
             <ul class="user-navigation">
-              <li class="site-search">Поиск
+              <li class="site-search"><span class="visually-hidden">Поиск</span>
                 <!-- >>> Форма поиска <<< -->
-                <div class="search-form">
-                  <h2 class="visually-hidden">Форма поиска</h2>
-                  <form class="search" method="get" action="https://echo.htmlacademy.ru">
-                    <p>
-                      <label for="site-search"><span class="visually-hidden">Поле поиска</span></label>
-                      <input id="site-search" type="search" name="search" placeholder="Что ищем?">
-                    </p>
-                    <input type="submit" value="">
-                  </form>
-                </div>
+                <h2 class="visually-hidden">Форма поиска</h2>
+                <form class="search" action="#" method="get">
+                <fieldset class="search-form">
+                  <input class="input-field" id="search" type="search" name="search" placeholder="Что ищем?">
+                  <label class="top-placeholder" for="search">Что ищем?</label>
+                </fieldset>
+                <input name="site-search" type="submit">
+              </form>
               </li>  <!-- >>>-// Конец формы поиска <<< -->
               <li class="login-link">Вход
                 <!-- >>> Форма входа в личный кабинет <<< -->
@@ -69,7 +67,7 @@
                 </div>
                 <!-- >>>-// Конец формы входа в личный кабинет <<< -->
               </li>
-              <li class="shop-cart">Корзина</li>
+              <li class="shop-cart">Пусто</li>
             </ul>
           </div>
         </nav>
@@ -78,7 +76,7 @@
 
     <main class="main-container">
       <p class="contact-details">
-        <span class="time-schedule">С 10 до 20, ежедневно</span><br>
+        <span class="time-schedule">С 10 до 20, ежедневно</span>
         <span class="phone-number">8 812 450-25-25</span>
       </p> 
       <!-- >>> Слайдер с кнопками-переключателями <<<-->
