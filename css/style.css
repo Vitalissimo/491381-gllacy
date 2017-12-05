@@ -53,7 +53,21 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+  /*>>> Блок Слайдер <<<*/
+
 .slider {
+  padding: 0 auto;
   position: relative;
   padding-top: 180px;
   text-align: center;
@@ -159,26 +173,62 @@ body {
   background-color: #ffffff;
 }
 
-a {
-  text-decoration: none;
+/*>>> Блок Шапки <<<*/
+
+.main-header {
+  margin:0;
+  width: auto;
+}
+
+.main-header-logo {
   margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 155px;
+  height: 68px;
+}
+
+.menu-container {
+  width: 1012px;
+  margin: 0;
+  margin-top: 10px;
   padding: 0;
 }
 
-img {
-  margin: 0;
-  padding: 0;
+.main-navigation .menu-container {
+  display: flex;
+  justify-content: space-between;
 }
+
 .main-navigation {
   font-size: 16px;
   font-weight: bold;
   line-height: 18px;
+
+  display: flex;
+  flex-direction: row;
 }
 
 .site-navigation,
 .user-navigation,
 .site-catalog-list {
   list-style: none;
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 378px;
+  justify-content: space-around;
+}
+
+.site-navigation-button {
+  margin-top: 22px;
 }
 
 .site-navigation a,
@@ -243,6 +293,32 @@ img {
   margin-top: 22px;
 }
 
+.user-navigation {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  width: 263px;
+  justify-content: space-between;
+}
+
+.site-search {
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2) url(../img/background-images/sprite.png) no-repeat;
+  background-position: -2px -546px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+.site-search:hover {
+  color: #333333;
+  background: #f8f7f4 url(../img/background-images/sprite.png) no-repeat;
+  background-position: -33px -546px;
+}
 
 .login-link {
   position: relative;
@@ -258,6 +334,7 @@ img {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .login-link::before {
@@ -279,20 +356,45 @@ img {
   background: #f8f7f4 url("../img/background-images/sprite.png") no-repeat;
   background-position: -41px -158px;
 }
-.breadcrumbs-contacts-wrapper {
-  margin: 0 auto;
-  padding: 0;
-  width: 1146px;
-  display: flex;
-  justify-content: space-between;
+
+/*Кнопки корзины для двух страниц*/
+
+.shop-cart {
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 45px;
+  padding-right: 40px;
+  margin-left: 9px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.shop-cart::before {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 6px;
+  width: 22px;
+  height: 22px;
+  color: #333333;
+  background: url("../img/background-images/sprite.png") no-repeat;
+  background-position: -11px -9px;
 }
 
-.title-ice-cream {
-  width: 1146px;
-  margin: 0 auto;
-  padding: 0;
+.shop-cart-full {
+  padding-right: 22px;
+  color: #333333;
+  background-color: #f8f7f4;
 }
-
+.shop-cart-full::before {
+  background: #f8f7f4 url("../img/background-images/sprite.png") no-repeat;
+  background-position: -11px -48px;
+}
 .contact-details {
   font-weight: bold;
   margin: 0 auto;
@@ -311,10 +413,25 @@ img {
   margin-bottom: 4px;
 }
 
-.button {
-  background-color: #f06441;
-  font-weight: bold;
-  color: #ffffff;
+/*>>> Блок Малинка-Шоколадка <<<*/
+
+.banner {
+  width: 1146px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  padding: 0;
+  display: flex;
+  flex-direcion: row;
+  justify-content: space-between;
+}
+
+.banner-left,
+.banner-right {
+  width: 560px;
+  min-height: 230px;
+  border-radius: 25px;
+  box-sizing: border-box;
 }
 
 .banner {
@@ -323,17 +440,67 @@ img {
   list-style: none;
 }
 
-.banner-1 {
+.banner-left {
   background-image: url(../img/background-images/raspberry-background.jpg);
 }
 
-.banner-2 {
+.banner-right {
   background-image: url(../img/background-images/chocolate-background.jpg);
 }
 
 .banner-title {
   font-size: 35px;
   line-height: 41px;
+  margin-top: 14px;
+  margin-left: 20px; 
+  margin-bottom: 0;
+}
+.banner-content {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  padding-right: 20px;
+  margin-top: 15px;
+}
+
+.button {
+  background-color: #f06441;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.banner-button {
+  display: inline-block;
+  padding: 10px 23px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160,32,11,0.76);
+  vertical-align: top;
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 100px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  float: right;
+  margin-right: 22px;
+  margin-top: 7px;
+}
+
+.banner-button:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+
+}
+
+.banner-button:active {
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .ice-cream-list {
@@ -355,6 +522,26 @@ img {
   box-sizing: border-box;
 }
 
+.ice-cream-item {
+  margin: 0 13px;
+  padding: 0;
+  flex-basis: 22.2%;
+  max-height: 407px;
+  position: relative;
+}
+
+.ice-cream-item img {
+  border-radius: 50%;
+}
+
+.ice-cream-price {
+  position: absolute;
+  z-index: 60;
+  bottom: 49px;
+  left: -5px;
+  text-shadow: 1px 3px 1px rgba(49, 50, 53, 0.2);
+}
+
 .ice-cream-price-figure {
   font-weight: bold;
   font-size: 45px;
@@ -370,8 +557,86 @@ img {
 .description {
   color: #ffffff;
   text-align: center;
+  cursor: pointer;
+  display: block;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 6px;
+  text-decoration-line: underline;
 }
 
+.ice-cream-item-hit::before {
+  content: "";
+  position: absolute;
+  left: -17px;
+  top: 2px;
+  width: 74px;
+  height: 64px;
+  background: transparent url(../img/background-images/sprite.png) no-repeat;
+  background-position: -3px -282px;
+  z-index: 10;
+}
+
+.ice-cream-item::after {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  content: "";
+  display: none;
+  height: 405px;
+  left: -13px;
+  position: absolute;
+  top: -5px;
+  width: 293px;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.ice-cream-button-view {
+  display: inline-block;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  vertical-align: top;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, .76);
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 100px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, .64);
+
+  position: absolute;
+  margin-top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 195px;
+  box-sizing: border-box;
+  padding: 11px 5px;
+  visibility: hidden;
+  z-index: 100;
+}
+
+.ice-cream-item:hover::after {
+  display: block;
+}
+
+.ice-cream-button-view:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px #ac1000;
+  color: #fff;
+}
+.ice-cream-button-view:active {
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.ice-cream-item:hover .ice-cream-button-view {
+  visibility: visible;
+}
 .about-shop {
   background-image: url(../img/background-images/vaffel-background.jpg);
   color: #000000;
@@ -382,9 +647,12 @@ img {
 }
 
 .about-shop h2 {
+  display:inline-block;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
+  margin-left: 21px;
+  margin-top: 33px;
 }
 
 .about-shop-text {
@@ -536,128 +804,6 @@ input[type="radio"].visually-hidden {
 }
 
 
-/*>>>>>>>>>> Начало блока построения сеток<<<<<<<<<<*/
-
-
-/*>>> Блок Шапки <<<*/
-
-.main-header {
-  margin:0;
-  width: auto;
-}
-
-.main-navigation {
-  display: flex;
-  flex-direction: row;
-}
-
-.main-header-logo {
-  margin: 0;
-  padding: 0;
-  margin-top: 10px;
-  margin-right: 10px;
-  width: 155px;
-  height: 68px;
-}
-
-.site-navigation {
-  margin: 0;
-  padding: 0;
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 378px;
-  justify-content: space-around;
-}
-
-.site-navigation-button {
-  margin-top: 22px;
-}
-.user-navigation {
-  margin: 0;
-  padding: 0;
-
-  display: flex;
-  flex-direction: row;
-  width: 263px;
-  justify-content: space-between;
-}
-
-.site-search {
-  width: 32px;
-  height: 32px;
-  background: rgba(255, 255, 255, 0.2) url(../img/background-images/sprite.png) no-repeat;
-  background-position: -2px -546px;
-  border: none;
-  border-radius: 50%;
-  outline: none;
-}
-
-.site-search:hover {
-  color: #333333;
-  background: #f8f7f4 url(../img/background-images/sprite.png) no-repeat;
-  background-position: -33px -546px;
-}
-
-.menu-container {
-  width: 1012px;
-  margin: 0;
-  margin-top: 10px;
-  padding: 0;
-}
-
-.main-navigation .menu-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-
-/*>>>-// Конец Блока Шапки <<<*/
-
-/*>>> Блок Слайдер <<<*/
-
-.slider {
-  padding: 0 auto;
-}
-/*>>>-// Конец Блока Слайдер <<<*/
-
-
-/*>>> Блок Малинка-Шоколадка <<<*/
-
-.banner {
-  width: 1146px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
-  padding: 0;
-  display: flex;
-  flex-direcion: row;
-  justify-content: space-between;
-}
-
-.banner-1,
-.banner-2 {
-  width: 560px;
-  min-height: 230px;
-  border-radius: 25px;
-}
-
-
-/*>>>-// Конец Блока Малинка-шоколадка <<<*/
-
-
-/*>>> Блок товаров <<<*/
-
-.ice-cream-item {
-  margin: 0 13px;
-  padding: 0;
-  flex-basis: 22.2%;
-  max-height: 407px;
-}
-
-
-/*>>>-// Конец Блока товаров <<<*/
 
 
 /*>>> Блок Преимущества <<<*/
@@ -706,10 +852,6 @@ input[type="radio"].visually-hidden {
   background-position: 20% 36%;
   color: #000000;
 }
-
-
-/*>>>-// Конец Блока Статьи и формы подписки <<<*/
-
 
 /*>>> Блок Карта и контакты <<<*/
 
@@ -765,13 +907,15 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 }
 
-/*>>> Стили корзины <<<*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>> Стили объектов страницы каталога <<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*>>> Стили формы корзины <<<*/
 
 .cart {
   display: none;
   position: absolute;
   z-index: 20;
-  top: 76px;
+  top: 36px;
   right: 0;
   padding-left: 17px;
   padding-right: 14px;
@@ -941,6 +1085,13 @@ input[type="radio"].visually-hidden {
 
 /*Хлебные крошки*/
 
+.breadcrumbs-contacts-wrapper {
+  margin: 0 auto;
+  padding: 0;
+  width: 1146px;
+  display: flex;
+  justify-content: space-between;
+}
 .breadcrumbs{
   margin:0;
   padding: 0;
@@ -949,6 +1100,15 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row;
 }
+
+/*Заголовок*/
+
+.title-ice-cream {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 /*Форма фильтров*/
 .catalog-filter {
   width: 1146px;
